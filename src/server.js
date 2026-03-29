@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
-const userRoutes = require('./routes/user.route');
+const userRoutes = require('./modules/user/routes/user.route');
 
 // Middleware
 app.use(express.json()); // Replaces bodyParser.json()
